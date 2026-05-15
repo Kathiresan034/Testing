@@ -1,7 +1,7 @@
 
 {{ config(
     materialized='table',
-    alias='stg_orders'
+    alias='stg_orders_1'
 ) }}
 
 WITH raw_orders AS (
