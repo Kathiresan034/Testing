@@ -2,6 +2,6 @@
 -- If this query returns any rows, the test fails.
 SELECT
     order_id,
-    total_shipping
+    shipping_amount
 FROM {{ ref('stg_orders') }}
-WHERE total_shipping < 0
+WHERE shipping_amount < 0
