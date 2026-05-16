@@ -4,4 +4,4 @@ SELECT
     order_id,
     shipping_amount
 FROM {{ ref('stg_orders') }}
-WHERE shipping_amount < 20
+WHERE shipping_amount < 0
