@@ -20,7 +20,8 @@ clean-targets:
 
 # Configuring models
 models:
-  det_demo_testing: # This MUST match the 'name' at the top of this file
-    orders:         # This matches your folder /models/orders/
-      +materialized: table
+  det_demo_testing:
+    staging:      # Add this level!
+      orders:     # Now dbt can find the orders folder
+        +materialized: table
     +materialized: table # Default for any other models in the models/ folder
