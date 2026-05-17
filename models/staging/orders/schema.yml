@@ -4,7 +4,7 @@ sources:
   - name: snowflake_raw
     description: "Raw data from Snowflake"
     database: DBT_SF_TESTING  # Replace with your actual Snowflake DB name
-    schema: DBT_STAGE      # Replace with your actual Snowflake Schema (e.g., PUBLIC)
+    schema: DBT_RAW     # Replace with your actual Snowflake Schema (e.g., PUBLIC)
     tables:
       - name: orders
 
